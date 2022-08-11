@@ -26,9 +26,9 @@ flatpickr(dateTimePicker, {
     if (selectedMs <= new Date().getTime()) {
       Notiflix.Notify.failure('Please choose a date in the future');
       startBtn.disabled = true;
-    } else {
+    }
+    else {
       startBtn.disabled = false;
-
       // function to calculate get remaining time & set interval
       function convertMs(ms) {
         let counterDown = setInterval(() => {
